@@ -1,0 +1,157 @@
+header
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.diaporama1
+{
+    margin:0 auto;
+    width: 960px;
+    height: 500px;
+    border: 3px solid #333;
+    background-image: url(images/images1.png);
+
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-box-direction: normal;
+
+    -moz-animation-name: diapo1;
+    -moz-animation-duration: 9s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+
+    animation-name: diapo1;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+
+@-webkit-keyframes diapo1{
+
+0% 
+{
+    background-image: url(images/images1.png);
+}
+33%
+{
+background-image:url("images/images2.png");
+}
+66%
+{
+    background-image: url("images/images3.png");
+}
+}
+
+@-moz-keyframes diapo1{
+
+    0% 
+    {
+        background-image: url(images/images1.png);
+    }
+    33%
+    {
+    background-image:url("images/images2.png");
+    }
+    66%
+    {
+        background-image: url("images/images3.png");
+    }
+}
+
+@keyframes diapo1{
+
+    0% 
+    {
+        background-image: url(images/images1.png);
+    }
+    33%
+    {
+    background-image:url("images/images2.png");
+    }
+    66%
+    {
+        background-image: url("images/images3.png");
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+nav
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+li,a, button
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo
+{
+    cursor: pointer;
+}
+
+.nav__links
+{
+    list-style: none;
+}
+
+.nav__links li
+{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav__links li a
+{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover
+{
+    color: #0088a9;
+}
+
+button
+{
+    padding: 9px 25px;
+    background-color: rgb(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover
+{
+    background-color: rgba(0,136,169,1);
+    
+}
+
