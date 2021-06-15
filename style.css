@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 header
 {
     display: flex;
     justify-content: space-around;
 }
+body
+{
+    width: 100%;
+    background-color: rgb(18,18,18);
+    
+}
 
+.logo
+{
+    height: 100px;
+    width: 90px;
+  
+}
 
 .diaporama1
 {
     margin:0 auto;
     width: 960px;
     height: 500px;
-    border: 3px solid #333;
+    border: 3px solid;
     background-image: url(images/images1.png);
+    position: relative;
+    bottom: 16px;
 
     -webkit-animation-name: diapo1;
     -webkit-animation-duration: 9s;
@@ -45,7 +60,7 @@ background-image:url("images/images2.png");
 }
 66%
 {
-    background-image: url("images/images3.png");
+    background-image: url("images/image3.jpg");
 }
 }
 
@@ -61,7 +76,7 @@ background-image:url("images/images2.png");
     }
     66%
     {
-        background-image: url("images/images3.png");
+        background-image: url("images/image3.jpg");
     }
 }
 
@@ -77,18 +92,19 @@ background-image:url("images/images2.png");
     }
     66%
     {
-        background-image: url("images/images3.png");
+        background-image: url("images/image3.jpg");
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 
 nav
 {
-    box-sizing: border-box;
+    box-sizing: border-box ;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: rgb(6,6,6);
+
 }
 
 ul
@@ -97,13 +113,19 @@ ul
     justify-content: space-between;
 }
 
+nav ul
+{
+    font-family: 'Anton', sans-serif;
+}
+
 li,a, button
 {
-    font-family: "Montserrat", sans-serif;
+    
     font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
+    font-size: 45px;
+    color: white;
     text-decoration: none;
+
 }
 
 header
@@ -116,12 +138,13 @@ header
 
 .logo
 {
-    cursor: pointer;
+   
 }
 
 .nav__links
 {
     list-style: none;
+    width: 100%;
 }
 
 .nav__links li
@@ -154,4 +177,21 @@ button:hover
     background-color: rgba(0,136,169,1);
     
 }
+
+.fleche
+{
+position: relative;
+
+right: 40px;
+bottom: 15px;
+transform: rotate( 180deg);
+
+
+}
+
+
+
+
+
+
 
